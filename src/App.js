@@ -1,8 +1,17 @@
+import React from "react";
+import { Routes, Route } from 'react-router-dom';
+import { Header } from "./components/header";
+import { Main } from "./pages/main";
 
 function App() {
   return (
     <div>
-      <h1></h1>
+      <Header/>
+      <div>
+          <Routes>
+            <Route path='/' element={<Main />} />
+          </Routes>
+        </div>
     </div>
   );
 }
