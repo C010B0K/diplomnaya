@@ -9,10 +9,10 @@ export function HeaderTop(){
     <>
   <div className='flex flex-row justify-between fixed'>
   
-  <ul className="flex flex-row gap-x-[45px] lg:hidden">
-    <li className='text-[#fff] text-[15px] font-html'><Link to="/">Отзывы</Link></li>
-    <li className='text-[#fff] text-[15px] font-html'><Link to="/">О нас</Link></li>
-    <li className='text-[#fff] text-[15px] font-html'><Link to="/">Контакты</Link></li>
+  <ul className="flex flex-row gap-x-[45px] lg:hidden fixed left-[39%] gap-x-[100px] pt-[5px]">
+    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Отзывы</Link></li>
+    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">О нас</Link></li>
+    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Контакты</Link></li>
   </ul>
   <nav>
         <section className="md:flex header:hidden lg:flex fixed w-full bg-[#27272780] z-10 backdrop-blur-[5px] lg:flex-col">
