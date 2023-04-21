@@ -53,13 +53,13 @@ export function HeaderTop(){
                 <Link to='/' >Главная</Link>
               </li>
               <li>
-                <Link to='/' >Товары</Link>
+                <Link to='/' >Отзывы</Link>
               </li>
               <li>
                 <Link to='ShopCart' >О нас</Link>
               </li>
               <li>
-                <Link to='Profile'>Профиль</Link>
+                <Link to='Profile'>Контакты</Link>
               </li>
             </ul>
           </div>
