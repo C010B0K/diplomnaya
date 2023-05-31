@@ -116,7 +116,9 @@ export const Input = () => {
           errors={errors}
         />
       </div>
+      <span className="group !w-[300px] inline-grid">
       <Button type="submit" name="Подтвердить" />
+      </span>
     </form>
   );
 };

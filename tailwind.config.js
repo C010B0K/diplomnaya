@@ -30,6 +30,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         background: "url('/src/img/bgmain.png')",
+        backgroundAus: "url('/src/img/bg2.png')"
       }
     },
     
