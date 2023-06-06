@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-
 export function HeaderTop(){
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return(
-    <>
   <div className='flex flex-row justify-between fixed'>
   
   <ul className="flex flex-row gap-x-[45px] lg:hidden fixed left-[39%] gap-x-[100px] pt-[5px]">
-    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Отзывы</Link></li>
-    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">О нас</Link></li>
-    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Контакты</Link></li>
+    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Главная</Link></li>
+    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/order">Заказать</Link></li>
+    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/about">О нас</Link></li>
+
   </ul>
   <nav>
         <section className="md:flex header:hidden lg:flex fixed w-full bg-[#27272780] z-10 backdrop-blur-[5px] lg:flex-col">
@@ -53,20 +52,15 @@ export function HeaderTop(){
                 <Link to='/' >Главная</Link>
               </li>
               <li>
-                <Link to='/' >Отзывы</Link>
+                <Link to='/about' >О нас</Link>
               </li>
               <li>
-                <Link to='ShopCart' >О нас</Link>
-              </li>
-              <li>
-                <Link to='Profile'>Контакты</Link>
+                <Link to='/order'>Заказать</Link>
               </li>
             </ul>
           </div>
         </section>
       </nav>
  </div>
-
-    </>
   )
 }

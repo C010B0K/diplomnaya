@@ -31,6 +31,9 @@ module.exports = {
       backgroundImage: {
         background: "url('/src/img/bgmain.png')",
         backgroundAus: "url('/src/img/bg2.png')"
+      },
+      colors:{
+        'regularGreen':'linear-gradient(265.5deg, #CFC188 2.21%, #997928 99.57%)'
       }
     },
     

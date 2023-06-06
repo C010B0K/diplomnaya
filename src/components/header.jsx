@@ -3,7 +3,8 @@ import { Button } from "./button";
 import { HeaderTop } from "./headerTop";
 
 
-export function Header() {
+export function Header () {
+  // const {name} = props;
   return (
     <>
     <HeaderTop/>
