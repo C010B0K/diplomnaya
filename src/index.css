@@ -17,7 +17,3 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-img{
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-}
