@@ -1,6 +1,8 @@
 import Inst from "../img/inst.svg";
 import Wc from "../img/WC.svg";
 import Tg from "../img/tg.svg"
+import Whatsapp from "./whatsapp";
+
 
 export function Footer(){
   return(
@@ -35,7 +37,7 @@ export function Footer(){
         <div>
         <ul className="text-[#fff] text-[18px] font-html flex gap-[8px] flex-row">
           <li><a target="_blank" href="https://www.instagram.com/zootaxi_rostov/?igshid=NTc4MTIwNjQ2YQ%3D%3D"><img src={Inst} alt="" /></a></li>
-          <li><a target="_blank" href="https://t.me/zootaxi_otlov_rostov"><img src={Wc} alt="" /></a></li>
+          <li><Whatsapp children={<img src={Wc} alt="" />}/></li>
           <li><a target="_blank" href="https://t.me/zootaxi_otlov_rostov"><img src={Wc} alt="" /></a></li>
         </ul>
       </div>

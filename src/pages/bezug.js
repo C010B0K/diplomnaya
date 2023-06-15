@@ -3,6 +3,7 @@ import { Footer } from "../components/footer";
 import { Input } from "../components/input";
 import {CarTable} from "../components/carTable"
 import {Reviews} from "../components/reviews"
+import {ContactUs} from '../components/email'
 
 
 
@@ -24,6 +25,7 @@ export function Bezug(){
 <Input />
 <CarTable/>
 <Reviews/>
+<ContactUs/>
     </>
   )
 }

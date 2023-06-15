@@ -25,10 +25,8 @@ export function Calculate() {
       }
     }, 0);
     if (sum !== 0) {
-      console.log("Расчетная стоимость поездки:", sum);
       setTotalPrice(sum);
     } else {
-      console.log("Не удалось выполнить расчет стоимости поездки.");
       setTotalPrice(0);
     }
   };

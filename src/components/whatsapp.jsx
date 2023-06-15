@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Whatsapp = (props) => {
+const Whatsapp = (props, {children}) => {
   const [phoneNumber, setPhoneNumber] = useState('ВАШ НОМЕР ТЕЛЕФОНА');
   const message = encodeURIComponent('Здравствуйте, я хочу заказать такси');
   const { name } = props;
@@ -20,7 +20,7 @@ const Whatsapp = (props) => {
 
   return (
     <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank">
-      {name}
+      {name}{children}
     </a>
   );
 };
