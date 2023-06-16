@@ -11,6 +11,9 @@ module.exports = {
 
       'header': { min: '768px' },
 
+      'email': { max: '950px' },
+
+
       '2xl': { max: '1535px' },
       // => @media (max-width: 1535px) { ... }
 

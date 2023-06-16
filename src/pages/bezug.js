@@ -4,6 +4,7 @@ import { Input } from "../components/input";
 import {CarTable} from "../components/carTable"
 import {Reviews} from "../components/reviews"
 import {ContactUs} from '../components/email'
+import {Map} from '../components/map'
 
 
 
@@ -22,10 +23,9 @@ export function Bezug(){
     <p className=" pb-[20px] px-[20px] border-b border-b-[#333] max-w-[190px]">Более 10 лет стажа и более 2000 заказов. Нам можно доверять жизнь питомца</p>
   </div>
 </section>
-<Input />
-<CarTable/>
 <Reviews/>
 <ContactUs/>
+<Map/>
     </>
   )
 }

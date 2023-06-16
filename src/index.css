@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+iframe{
+  /* width: 400px; */
+}
 
 @tailwind base;
 @tailwind components;

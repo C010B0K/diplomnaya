@@ -1,18 +1,16 @@
 import React from "react";
-import { Card } from "../components/card";
 import Taxi from "../img/tax.png";
 import TaxiSVG from "../img/Group_5.svg";
-import Car from "../img/car.png";
 import Group22 from "../img/Group 22.svg";
 import Group23 from "../img/Group 23.svg";
 import Group24 from "../img/Group 24.svg";
-import { Input } from "../components/input";
+import {Reviews} from "../components/reviews"
 import { Calculate } from "../components/calcluate";
 
 export function Main() {
   return (
     <div className="flex flex-col">
-      <div className="max-w-[1020px] self-center justify-between sm:px-[50px] lp:px-[25px] w-full my-[71px] flex flex-row lg:flex-col lg:gap-y-[40px]">
+      <div className="max-w-[1020px] px-[50px] self-center justify-between sm:px-[50px] lp:px-[25px] w-full my-[71px] flex flex-row lg:flex-col lg:gap-y-[40px]">
         <img src={Taxi} alt="" />
         <div className="flex flex-col justify-between">
           <div className="flex flex-col ">
@@ -44,21 +42,6 @@ export function Main() {
         </div>
       </div>
 
-      <div className="max-w-[1020px] self-center sm:px-[50px] lp:px-[25px] w-full my-[71px] ">
-        <div className="flex flex-col items-center ">
-          <h2 className="font-html font-bold text-[30px] leading-[150%] text-center">
-            Довезем вашего питомца в <br /> целости и сохранности
-          </h2>
-          <h6 className="font-html text-[18px] font-normal pt-[12px]">
-            Наши лучшие автомобили
-          </h6>
-          <div className="grid grid-cols-3 gap-x-[64px] pt-[34px] lg:grid-cols-1 gap-y-[20px]">
-            <Card icon={Car} stav="350" price="170" colvo="2" />
-            <Card icon={Car} stav="300" price="150" colvo="1" />
-            <Card icon={Car} stav="400" price="200" colvo="3" />
-          </div>
-        </div>
-      </div>
 
       <div className="bg-[#1E1E1E] flex flex-col gap-y-[30px] py-[50px] ">
         <div className="text-center text-[#fff]">
@@ -87,6 +70,7 @@ export function Main() {
           </div>
         </div>
       </div>
+      {/* <Reviews/> */}
 
       <Calculate/>
 

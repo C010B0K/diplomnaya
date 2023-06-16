@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-export function HeaderTop(){
+export function HeaderTop() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  return(
-  <div className='flex flex-row justify-between fixed'>
-  
-  <ul className="flex flex-row gap-x-[45px] lg:hidden fixed left-[39%] gap-x-[100px] pt-[5px]">
-    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Главная</Link></li>
-    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/order">Заказать</Link></li>
-    <li className='text-[#fff] text-[22px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/about">О нас</Link></li>
+  return (
+    <div className='flex flex-row justify-between fixed'>
 
-  </ul>
-  <nav>
+      <ul className="flex flex-row gap-x-[45px] lg:hidden fixed justify-center py-2 bg-[#1d1d1d70] w-full backdrop-blur-[2px]">
+        <li className='text-[#fff] text-[20px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/">Главная</Link></li>
+        <li className='text-[#fff] text-[20px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/order">Заказать</Link></li>
+        <li className='text-[#fff] text-[20px] font-html active:text-[#FFD600] hover:text-[#FFD600]'><Link to="/about">О нас</Link></li>
+
+      </ul>
+      <nav>
         <section className="md:flex header:hidden lg:flex fixed w-full bg-[#27272780] z-10 backdrop-blur-[5px] lg:flex-col">
           <div className="flex items-center">
 
@@ -61,6 +61,6 @@ export function HeaderTop(){
           </div>
         </section>
       </nav>
- </div>
+    </div>
   )
 }

@@ -12,7 +12,7 @@ export function Galary(){
     fetchData();
   }, []);
   const fetchData = async () => {
-      const response = await axios.get('http://127.0.0.1:8000/api/photo');
+      const response = await axios.get('http://admin.zootaxirostov.space/api/photo');
       setData(response.data);
   };
   console.log(data);

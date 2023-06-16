@@ -2,6 +2,7 @@ import People1 from "../img/people1.png"
 import Dog2 from "../img/dog2.png"
 import Dog3 from "../img/dog3.png"
 import { Galary } from "../components/galary"
+import {Map} from "../components/map"
 
 
 
@@ -23,7 +24,6 @@ export function About(){
   <div className="order-5  sm:order-5">
     <p>"LogoTaxi" работает круглосуточно, что позволяет клиентам заказывать перевозку своих питомцев в любое время суток. Кроме того, компания предоставляет услугу "сопровождение", при которой водитель сопровождает животное в ветеринарную клинику или на другое место назначения.</p></div>
 </div>
-
 <div className="mx-[70px] mb-[50px]">
   <p className="text-[25px] text-center text-[#666] font-bold font-html">Клиенты отмечают высокий уровень профессионализма водителей, а также доброжелательность и заботу о животных. Компания "OOTAXI_ROSTOV" пользуется высокой репутацией среди владельцев домашних животных и является одной из лучших компаний в своей области.</p>
 </div>

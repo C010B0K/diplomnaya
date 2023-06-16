@@ -7,7 +7,7 @@ const Whatsapp = (props, {children}) => {
   const { name } = props;
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/contacts')
+    axios.get('http://admin.zootaxirostov.space/api/contacts/')
       .then(response => {
         const phoneNumber = response.data[0].whats;
         console.log(phoneNumber);

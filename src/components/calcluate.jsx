@@ -8,7 +8,7 @@ export function Calculate() {
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/price")
+    fetch("http://admin.zootaxirostov.space/api/price/")
       .then((response) => response.json())
       .then((data) => {
         setPriceList(data);
@@ -47,7 +47,7 @@ export function Calculate() {
         </h5>
         <div className="flex justify-between w-full flex-col lg:items-center lg:gap-[100px]">
           <div>
-            <div className="flex justify-around sm:w-[280px] gap-y-[30px]">
+            <div className="flex justify-around sm:w-[280px] gap-y-[30px] md:flex-col">
               <Button name="По городу" size="small" onClick={() => handleOptionClick(1)} />
               <Button name="В аэропорт" size="small" onClick={() => handleOptionClick(2)} />
             </div>
@@ -55,24 +55,24 @@ export function Calculate() {
               <h6 className="mt-[100px] mb-[20px] text-[30px] text-[#fff] lg:my-[20px] sm:text-center sm:w-[280px] text-center">
                 Дополнительные опции
               </h6>
-              <span className="flex justify-around">
-              <ul className="flex flex-col gap-[30px]">
-                <li className="w-[410px] sm:w-[280px]">
+              <span className="flex justify-around md:flex-col md:gap-[30px]">
+              <ul className="flex flex-col gap-[30px] md:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button name="День" onClick={() => handleOptionClick(3)} />
                 </li>
-                <li className="w-[410px] sm:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button
                     name="С владельцем"
                     onClick={() => handleOptionClick(4)}
                   />
                 </li>
-                <li className="w-[410px] sm:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button
                     name="В одну сторону"
                     onClick={() => handleOptionClick(5)}
                   />
                 </li>
-                <li className="w-[410px] sm:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button
                     name="Пред-заказ"
                     onClick={() => handleOptionClick(6)}
@@ -80,22 +80,22 @@ export function Calculate() {
                 </li>
               </ul>
               <ul className="flex flex-col gap-[30px]">
-              <li className="w-[410px] sm:w-[280px]">
+              <li className="w-[410px] md:w-[280px]">
                   <Button name="Ночь" onClick={() => handleOptionClick(7)} />
                 </li>
-                <li className="w-[410px] sm:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button
                     name="Без владельца"
                     onClick={() => handleOptionClick(8)}
                   />
                 </li>
-                <li className="w-[410px] sm:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button
                     name="Туда и обратно"
                     onClick={() => handleOptionClick(9)}
                   />
                 </li>
-                <li className="w-[410px] sm:w-[280px]">
+                <li className="w-[410px] md:w-[280px]">
                   <Button
                     name="Срочный заказ"
                     onClick={() => handleOptionClick(10)}
@@ -106,7 +106,7 @@ export function Calculate() {
 
             </div>
           </div>
-          <div className="flex lg:gap-[30px] flex-row-reverse justify-around gap-[105px] mt-[50px]">
+          <div className="flex lg:gap-[30px] flex-row-reverse justify-around gap-[105px] mt-[50px] md:flex-col">
             <div className="inline-grid w-[410px] sm:w-[280px] gap-y-[30px]">
               <Button name="Забронировать" onClick={calculateTotalPrice} />
             </div>

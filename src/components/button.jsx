@@ -16,9 +16,11 @@ export const Button = (props) => {
     'text-lg',
     'focus:outline-none',
     'border-2',
+    
     'w-full',
     clicked ? 'bg-[#1E1E1E] border-[#FFD600] text-white' : 'bg-[#FFD600] text-black border-[#FFD600]',
     size === 'small' && '!w-[410px]',
+    size === 'smalle' && '!w-[410px]',
   );
 
   return (
@@ -27,7 +29,7 @@ export const Button = (props) => {
         setClicked(!clicked);
         onClick && onClick(e);
       }}
-      className={buttonClasses}
+      className={(`${buttonClasses}`)}
     >
       <a href={href} className="pointer-events-none">
         {name}
